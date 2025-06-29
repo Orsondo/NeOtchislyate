@@ -1,0 +1,13 @@
+from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
+
+main = ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text='Тесты')],
+                                     [KeyboardButton(text='Подготовка')],
+                                     [KeyboardButton(text='О нас')]],
+                           resize_keyboard=True,
+                           input_field_placeholder='Выберите пункт меню...')
+
+
+testi = InlineKeyboardMarkup(inline_keyboard=[
+    [InlineKeyboardButton(text='Вариант-1', callback_data='VARone')],
+    [InlineKeyboardButton(text='Вариант-2', callback_data='VARtwo')],
+    [InlineKeyboardButton(text='Вариант-3', callback_data='VARthree')]])
